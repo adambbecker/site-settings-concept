@@ -8,7 +8,9 @@
   font-weight: 600;
   line-height: 18px;
   text-align: center;
-  transition: border-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out,
+              box-shadow 0.2s ease-out,
+              border-color 0.2s ease-out;
 }
 
 .standard {
@@ -45,4 +47,11 @@
 .primary:active {
   border-color: #005082;
   box-shadow: 0 1px 0 #005082 inset;
+}
+
+.primary:disabled {
+  background-color: #BBEDFC;
+  border-color: #8CC8E1;
+  box-shadow: 0 1px 0 #8CC8E1;
+  cursor: default;
 }

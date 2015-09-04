@@ -76,6 +76,7 @@ class TextInputDemo extends Component {
           <SettingsForm
             ref="form"
             saveText={ this.props.saveTxt }
+            inputValue={ this.state.inputValue }
             visible={ this.state.formVisible }
             onCancel={ ::this._handleCancelClick }
             onSave={ ::this._handleSaveClick }

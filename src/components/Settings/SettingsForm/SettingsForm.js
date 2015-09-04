@@ -32,8 +32,8 @@ class SettingsForm extends Component {
   }
 
   render() {
-    const { animKey, visible, children, onCancel, onSave, saveText } = this.props;
-    const containerStyles = ( this.props.visible ) ? styles.containerVisible : styles.container;
+    const { animKey, visible, children, inputValue, onCancel, onSave, saveText } = this.props;
+    const containerStyles = ( visible ) ? styles.containerVisible : styles.container;
 
     return (
       <div className={ containerStyles }>
@@ -57,6 +57,7 @@ class SettingsForm extends Component {
                   onClick={ onCancel }>Cancel</button>
                 <button
                   className={ styles.saveButton }
+                  disabled={ inputValue.replace(/\s+/g, '') === '' }
                   onClick={ onSave }>{ saveText }</button>
               </div>
             </div>
