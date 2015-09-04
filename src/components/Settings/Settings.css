@@ -1,0 +1,11 @@
+.container {
+  composes: standardColor from "../../vars/containers.css";
+  position: relative;
+  width: 100%;
+  max-width: 652px;
+}
+
+.spacingWrapper {
+  composes: standardSpacing from "../../vars/containers.css";
+  overflow: hidden;
+}

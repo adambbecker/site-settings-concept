@@ -1,0 +1,12 @@
+.container {
+  composes: lightGray from "../../../vars/backgrounds.css";
+  composes: gray from "../../../vars/borders.css";
+  width: 100%;
+  padding: 8px 24px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.text {
+  composes: caption from "../../../vars/typography.css";
+}

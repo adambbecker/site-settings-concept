@@ -1,0 +1,48 @@
+.button {
+  padding: 8px 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  transition: border-color 0.2s ease-out;
+}
+
+.standard {
+  composes: button;
+  composes: lightGray from "./backgrounds.css";
+  composes: gray from "./borders.css";
+  composes: dark from "./textColors.css";
+  box-shadow: 0 1px 0 #C8D7E1;
+}
+
+.standard:hover {
+  border-color: #A8BECE;
+  box-shadow: 0 1px 0 #A8BECE;
+}
+
+.standard:active {
+  border-color: #A8BECE;
+  box-shadow: 0 1px 0 #A8BECE inset;
+}
+
+.primary {
+  composes: button;
+  composes: blue from "./backgrounds.css";
+  composes: darkBlue from "./borders.css";
+  color: #fff;
+  box-shadow: 0 1px 0 #0087BE;
+}
+
+.primary:hover {
+  border-color: #005082;
+  box-shadow: 0 1px 0 #005082;
+}
+
+.primary:active {
+  border-color: #005082;
+  box-shadow: 0 1px 0 #005082 inset;
+}

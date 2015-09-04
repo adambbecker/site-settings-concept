@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 666px) {
+  .container {
+    display: block;
+  }
+}
+
+.container:first-child {
+  margin-top: 0;
+}

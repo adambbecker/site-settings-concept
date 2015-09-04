@@ -1,0 +1,41 @@
+.caption {
+  composes: standard from "./textColors.css";
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.label {
+  composes: dark from "./textColors.css";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.explain {
+  composes: standard from "./textColors.css";
+  font-size: 12px;
+  line-height: 20px;
+  color: #87A6BC;
+}
+
+.explainLink {
+  composes: interaction from "./textColors.css";
+  text-decoration: underline;
+}
+
+.textInput {
+  composes: dark from "./textColors.css";
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 24px;
+}
+
+.edit {
+  composes: light from "./textColors.css";
+  font-size: 11px;
+  line-height: 18px;
+  text-decoration: underline;
+  text-transform: capitalize;
+}

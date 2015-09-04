@@ -1,0 +1,15 @@
+.gray {
+  border-color: #C8D7E1;
+}
+
+.grayHover {
+  border-color: #A8BECE;
+}
+
+.darkBlue {
+  border-color: #0087BE;
+}
+
+.container {
+  border: solid 1px #D8E3EA;
+}

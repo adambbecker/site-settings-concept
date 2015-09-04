@@ -1,0 +1,10 @@
+/* Colors / Visuals */
+.standardColor {
+  composes: container from "./borders.css";
+  background-color: #fff;
+}
+
+/* Spacing */
+.standardSpacing {
+  padding: 24px;
+}

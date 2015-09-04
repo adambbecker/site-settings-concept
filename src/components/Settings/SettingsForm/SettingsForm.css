@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.containerVisible {
+  composes: container;
+  pointer-events: auto;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 12px;
+}
+
+.formButton {
+  flex: 0 1 auto;
+}
+
+.cancelButton {
+  composes: standard from "../../../vars/buttons.css";
+  composes: formButton;
+}
+
+.saveButton {
+  composes: primary from "../../../vars/buttons.css";
+  composes: formButton;
+  margin-left: 12px;
+}

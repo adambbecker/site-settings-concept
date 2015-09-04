@@ -1,0 +1,101 @@
+.container {
+  flex: 0 0 auto;
+  position: relative;
+  max-width: 186px;
+  margin-right: 24px;
+  text-align: right;
+}
+
+@media screen and (max-width: 666px) {
+  .container {
+    flex: none;
+    max-width: 100%;
+    margin-right: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 667px) {
+  .container {
+    padding-top: 3px;
+  }
+}
+
+.header {
+  margin-bottom: 8px;
+}
+
+.headerTxt {
+  composes: label from "../../../vars/typography.css";
+}
+
+@media screen and (max-width: 666px) {
+  .header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.explain {
+  composes: explain from "../../../vars/typography.css";
+}
+
+@media screen and (max-width: 666px) {
+  .explainHidden {
+    composes: explain;
+    display: none;
+  }
+}
+
+.saved {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 28px;
+  right: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4AB866;
+}
+
+@media screen and (max-width: 666px) {
+  .saved {
+    top: 4px;
+  }
+}
+
+.savedIcon {
+  width: 12px;
+  margin-right: 8px;
+  fill: #4AB866;
+}
+
+.mobileInfo {
+  display: none;
+}
+
+@media screen and (max-width: 666px) {
+  .mobileInfo {
+    display: block;
+    margin-left: 4px;
+  }
+}
+
+.mobileInfoIcon {
+  width: 16px;
+  height: 16px;
+  fill: #C8D7E1;
+  margin-top: 2px;
+}
+
+.mobileInfoIconOpen {
+  composes: mobileInfoIcon;
+  transform: rotateX(180deg);
+}
+
+/*.mobileInfoIcon {
+  composes: edit from "../../../vars/typography.css";
+  font-weight: 400;
+  text-decoration: none;
+}*/

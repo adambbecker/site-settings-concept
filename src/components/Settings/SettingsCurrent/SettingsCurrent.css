@@ -1,0 +1,28 @@
+.container:hover {
+  cursor: pointer;
+}
+
+.containerInvisible {
+  pointer-events: none;
+}
+
+.currentText {
+  composes: textInput from "../../../vars/typography.css";
+}
+
+.currentTextConstrain {
+  composes: currentText;
+  padding-right: 34px;
+}
+
+.editText {
+  composes: edit from "../../../vars/typography.css";
+  padding-top: 8px;
+  margin-top: 8px;
+  border-top: solid 1px #F3F6F8;
+  transition: border-top-color 0.2s ease-out;
+}
+
+.container:hover .editText {
+  border-top-color: #c8d7e1;
+}
