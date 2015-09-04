@@ -1,1 +1,1 @@
-web: npm run serve
+web: rm -rf dist && webpack && node server.js
