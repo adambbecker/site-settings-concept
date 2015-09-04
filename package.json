@@ -15,13 +15,14 @@
     "email": "adambbecker@gmail.com",
     "url": "https://github.com/adambbecker"
   },
-  "devDependencies": {
+  "dependencies": {
     "abb-reset-css": "git://github.com/adambbecker/abb-reset-css.git",
     "autoprefixer-core": "^5.1.11",
     "babel-core": "^5.2.17",
     "babel-loader": "^5.0.0",
     "css-loader": "^0.15.1",
     "ejs": "^2.3.1",
+    "express": "^4.13.3",
     "extract-text-webpack-plugin": "^0.8.1",
     "file-loader": "^0.8.4",
     "gh-pages": "git://github.com/markdalgleish/gh-pages#cli-message",
@@ -36,8 +37,5 @@
     "url-loader": "^0.5.6",
     "webpack": "^1.9.10",
     "webpack-dev-server": "^1.9.0"
-  },
-  "dependencies": {
-    "express": "^4.13.3"
   }
 }
