@@ -64,7 +64,7 @@ class SettingsLabel extends Component {
           { currentValue =>
             <div>
               { Object.keys(currentValue).map(key => {
-                let [ animatingElem, explainStyle, savedStlye ] = [ null, null, null ];
+                let [ animatingElem, explainStyle, savedStlye, savedStlyeTransform ] = [ null, null, null, null ];
                 const config = currentValue[ key ];
 
                 if ( key === 'explain' ) {
@@ -79,8 +79,10 @@ class SettingsLabel extends Component {
                       style={ explainStyle }>{ children }</p>
                   );
                 } else if ( key === 'saved' ) {
+                  savedStlyeTransform = `translateY(${ config.y.val }px)`;
                   savedStlye = {
-                    transform: `translateY(${ config.y.val }px)`,
+                    transform: savedStlyeTransform,
+                    WebkitTransform: savedStlyeTransform,
                     opacity: `${ config.opacity.val }`
                   };
 

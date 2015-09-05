@@ -46,12 +46,14 @@ class SettingsCurrent extends Component {
             <p
               className={ currentStyles }
               style={ {
-                transform: `translate(${ interpolated.currentText.x.val }px, ${ interpolated.currentText.y.val }px)`
+                transform: `translate(${ interpolated.currentText.x.val }px, ${ interpolated.currentText.y.val }px)`,
+                WebkitTransform: `translate(${ interpolated.currentText.x.val }px, ${ interpolated.currentText.y.val }px)`
               } }>{ this.props.currentText }</p>
             <p
               className={ styles.editText }
               style={ {
                 transform: `scale(${ interpolated.editText.scale.val }) translateY(${ interpolated.editText.y.val }px)`,
+                WebkitTransform: `scale(${ interpolated.editText.scale.val }) translateY(${ interpolated.editText.y.val }px)`,
                 opacity: `${ interpolated.editText.opacity.val }`
               } }>{ this.props.editText }</p>
           </div>

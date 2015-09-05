@@ -42,6 +42,7 @@ class SettingsForm extends Component {
             <div>
               <div style={ {
                   transform: `scale(${ interpolated.form.scale.val })`,
+                  WebkitTransform: `scale(${ interpolated.form.scale.val })`,
                   opacity: `${ interpolated.form.opacity.val }`
                 } }>
                 { children }
@@ -50,6 +51,7 @@ class SettingsForm extends Component {
                 className={ styles.buttonContainer }
                 style={ {
                   transform: `translateY(${ interpolated.buttons.y.val }px)`,
+                  WebkitTransform: `translateY(${ interpolated.buttons.y.val }px)`,
                   opacity: `${ interpolated.buttons.opacity.val }`
                 } }>
                 <button
