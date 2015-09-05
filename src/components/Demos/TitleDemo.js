@@ -31,7 +31,7 @@ class TitleDemo extends Component {
         explainTxt="Displayed in the tab title of web browsers and in the header of most themes."
         editTxt="Edit Title"
         saveTxt="Save Title"
-        initialInputVal="Adam's Silo"
+        initialInputVal="Half Remembered Dream"
         springConfig={ this.props.springConfig } />
     );
   }

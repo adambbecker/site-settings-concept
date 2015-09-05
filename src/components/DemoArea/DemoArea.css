@@ -2,13 +2,17 @@
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
+  margin-top: 94px;
 }
 
 @media screen and (max-width: 666px) {
   .container {
-    padding: 0 8px;
+    flex: none;
+    display: block;
+    padding: 16px 8px 32px;
+    margin-top: 0;
   }
 }
