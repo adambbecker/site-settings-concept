@@ -22,6 +22,9 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+# Error logs
+npm-debug.log
+
 # App specific
 node_modules/
 .tmp
