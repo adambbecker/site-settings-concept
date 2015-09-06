@@ -6,9 +6,13 @@
 
 // ---- External Dependencies ----
 import React from 'react';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 // ---- Internal Dependencies ----
 import App from './components/App';
+
+React.initializeTouchEvents(true);
+injectTapEventPlugin();
 
 // ---- Render (entry) ----
 if (typeof document !== 'undefined') {

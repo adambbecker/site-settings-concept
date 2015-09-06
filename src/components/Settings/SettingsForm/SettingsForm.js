@@ -56,11 +56,11 @@ class SettingsForm extends Component {
                 } }>
                 <button
                   className={ styles.cancelButton }
-                  onClick={ onCancel }>Cancel</button>
+                  onTouchTap={ onCancel }>Cancel</button>
                 <button
                   className={ styles.saveButton }
                   disabled={ inputValue.replace(/\s+/g, '') === '' }
-                  onClick={ onSave }>{ saveText }</button>
+                  onTouchTap={ onSave }>{ saveText }</button>
               </div>
             </div>
           }

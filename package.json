@@ -31,6 +31,7 @@
     "raw-loader": "^0.5.1",
     "react": "^0.13.3",
     "react-motion": "^0.2.7",
+    "react-tap-event-plugin": "^0.1.7",
     "react-textarea-autosize": "^2.5.1",
     "react-to-html-webpack-plugin": "^2.1.0",
     "style-loader": "^0.12.3",

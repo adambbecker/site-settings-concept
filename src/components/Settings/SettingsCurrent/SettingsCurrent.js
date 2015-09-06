@@ -42,7 +42,7 @@ class SettingsCurrent extends Component {
     return (
       <Spring defaultValue={ ::this._getAnimDefValue() } endValue={ ::this._getAnimEndValue() }>
         { interpolated =>
-          <div className={ containerStyles } onClick={ this.props.onClick }>
+          <div className={ containerStyles } onTouchTap={ this.props.onClick }>
             <p
               className={ currentStyles }
               style={ {
